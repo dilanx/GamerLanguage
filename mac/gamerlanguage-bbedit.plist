@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN"
+    "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+
+<!--
+
+    Gamer Language
+    Language Module for BBEdit
+    Dilan N - dilanxd.com
+
+-->
+
+<dict>
+
+    <key>BBEditDocumentType</key>
+    <string>CodelessLanguageModule</string>
+    
+    <key>BBLMLanguageDisplayName</key>
+    <string>Gamer Language</string>
+    
+    <key>BBLMLanguageCode</key>
+    <string>GMLG</string>
+    
+    <key>BBLMSuffixMap</key>
+    <array>
+        <dict>
+            <key>BBLMLanguageSuffix</key>
+            <string>.gl</string>
+        </dict>
+    </array>
+    
+    <key>BBLMColorsSyntax</key>
+    <true/>
+    
+    <key>BBLMKeywordList</key>
+    <array>
+        <string>server</string>
+        <string>drop</string>
+        <string>lmao</string>
+        <string>grinding</string>
+        <string>while</string>
+        <string>read</string>
+        <string>gg</string>
+        <string>dc</string>
+        <string>easy</string>
+        <string>poggers</string>
+        <string>rage</string>
+    
+    </array>
+    
+    <key>BBLMPredefinedNameList</key>
+    <array>
+        <string>chat</string>
+        <string>stats</string>
+        <string>msg</string>
+        <string>kdr</string>
+        <string>takes</string>
+        <string>chats</string>
+        <string>stays</string>
+        <string>cracked</string>
+        <string>jank</string>
+    </array>
+        
+    
+    <key>Language Features</key>
+    <dict>
+    
+        <key>Identifier and Keyword Character Class</key>
+        <string>A-Za-z0-9_</string>
+        
+        <key>Open Strings 1</key>
+        <string>"</string>
+        
+        <key>Close Strings 1</key>
+        <string>"</string>
+        
+        <key>Prefix for Functions</key>
+        <string>server</string>
+        
+        <key>Open Statement Blocks</key>
+        <string>?</string>
+        
+        <key>Close Statement Blocks</key>
+        <string>gg</string>
+        
+    </dict>
+
+</dict>
+</plist>

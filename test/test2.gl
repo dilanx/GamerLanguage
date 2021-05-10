@@ -1,0 +1,23 @@
+server lobby
+    x mains W
+    drop "Enter two numbers to add them or type 0.1 to quit" in chat
+    grinding while x takes W?
+        read stats from chat into a
+        lmao a kdr stays 0.1?
+            poggers
+        gg
+        read stats from chat into b
+        ans mains addnumbers as a b
+        drop ans in chat
+    gg
+    drop "good bye" in chat
+dc
+
+server addnumbers: gab gab2
+    x mains 0
+    grinding while x kdr jank gab2?
+        gab good
+        x good
+    gg
+    easy gab
+dc
