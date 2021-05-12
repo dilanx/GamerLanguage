@@ -71,6 +71,11 @@ GamerLanguage\cli\gamer version
 
 When you run it for the first time, it might ask you what program to use to open it. Ruby should be an option, so make sure to pick that. It should only ask you about that once, if at all. Then you'll be able to use the command line to run Gamer Language files with `GamerLanguage\cli\gamer pog <file-name.gl>`.
 
+Although it says `gamer update` is a valid command, unfortunately Windows users don't get access to that luxury (not my fault sorryyyy). Here's how you check for updates and update Gamer Language.
+```
+cd <the GamerLanguage cli directory>
+update.sh
+```
 
 TIP:
 
