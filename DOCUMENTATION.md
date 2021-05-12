@@ -7,7 +7,19 @@ Here's a table of contents so you can get around faster.
 
 ## Table of Contents
 
-TODO
+1. [Creating and running a file](#Creating-and-running-a-file)
+2. [Getting started](#Getting-started)
+3. [Variables](#Variables)
+4. [Simple expressions](#Simple-expressions)
+5. [Conditionals](#Conditionals)
+6. [Loops](#Loops)
+7. [Functions](#Functions)
+8. [Advanced expressions](#Advanced-expressions)
+9. [I/O](#IO)
+10. [Variable manipulation](#Variable-manipulation)
+11. [Miscellaneous](#Miscellaneous)
+12. [Examples](#Examples)
+  a. [Take 2 numbers from chat and drop their sum](#Take-2-numbers-from-chat-and-drop-their-sum)
 
 ## Creating and running a file
 Create a normal text file with the extension `.gl`. 'gl' not only stands for Gamer Language but also for good luck because you're probably gonna need it when coding in this language lmao.
@@ -44,11 +56,11 @@ Assign variables like this.
 <variable-name> mains <expression>
 ```
 
-The keyword here is `mains`. The left side of the word is the variable name, and the right side is a [simple expression](#Simple-Expressions) or [advanced expression](#Advanced-Expressions).
+The keyword here is `mains`. The left side of the word is the variable name, and the right side is a [simple expression](#Simple-expressions) or [advanced expression](#Advanced-expressions).
 
-You can [manipulate variables](#Variable-Manipulation) and change their values, but we'll get into that later.
+You can [manipulate variables](#Variable-manipulation) and change their values, but we'll get into that later.
 
-## Simple Expressions
+## Simple expressions
 An expression is basically a set of things that equal one value. These include:
 * Strings *`"hello!"`*
   * Strings are anything surrounded in "double quotes".
@@ -128,11 +140,11 @@ dc
 
 When your server is called with those arguments (there'll be a problem if the caller doesn't give you a value for every argument), the values will be in [variables](#Variables) with what you named 'arg1', 'arg2', etc.
 
-You can return out of a server using the `easy` keyword lol. You can follow it with a [simple expression](#Simple-Expressions) to return a value like `easy <expression>` or you can just call `easy` to quit out of the server.
+You can return out of a server using the `easy` keyword lol. You can follow it with a [simple expression](#Simple-expressions) to return a value like `easy <expression>` or you can just call `easy` to quit out of the server.
 
-Check out [Advanced-Expressions](#Advanced-Expressions) to see how to call these servers and get the return value.
+Check out [Advanced-Expressions](#Advanced-expressions) to see how to call these servers and get the return value.
 
-## Advanced Expressions
+## Advanced expressions
 Advanced expressions can only be used in [variable](#Variables) assignment right now, and this is the only way to call servers.
 
 Here's what an advanced expression looks like.
@@ -164,7 +176,7 @@ To print:
 drop <simple-expression> in chat
 ```
 
-Don't forget that you'll need a [simple expression](#Simple-Expressions) to drop in the chat.
+Don't forget that you'll need a [simple expression](#Simple-expressions) to drop in the chat.
 
 
 To read:
@@ -178,17 +190,17 @@ Reading is a bit different. You'll need to specify what you're reading. Here are
 
 This is also a scenario where you don't use `mains` to set a [variable](#Variables), and instead set it like shown above.
 
-## Variable Manipulation
+## Variable manipulation
 You can change the values of variables.
 
 * Modifying numbers
   * `<variable-name> good` - increases the number in the variable by one (and stores it back in the variable)
   * `<variable-name> bad` - decreases the number in the variable by one (and stores it back in the variable)
-  * `<variable-name-1> mains <variable-name-2> but <simple-expression>` - add the number stored in the variable-name-2 [variable](#Variables) with the number produced by the [simple expression](#Simple-Expressions) and store it in the variable-name-1 variable. Both variable names can be the same if you want to add another number with a variable and store it in the same variable.
+  * `<variable-name-1> mains <variable-name-2> but <simple-expression>` - add the number stored in the variable-name-2 [variable](#Variables) with the number produced by the [simple expression](#Simple-expressions) and store it in the variable-name-1 variable. Both variable names can be the same if you want to add another number with a variable and store it in the same variable.
 
 TIP: You can modify the number of Os in `good` and the number of As in `bad` to change the number added or subtracted. The number is increased/decreased by one for *every extra vowel* in each. For example `<var> gooood` adds 3 (two extra Os to the two already there), and `<var> baaaad` subtracts 4 (three extra As to the one already there). You might want to do something like `<var> mains <var> but 25` or something for larger numbers though lmao.
 
-## Misc 
+## Miscellaneous 
 You can exit out of your program by rage quitting with `rage`.
 
 ## Examples
