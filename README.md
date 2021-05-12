@@ -8,7 +8,7 @@ It's also weird and difficult to program in but whatever it's kinda fun and it c
 ## Documentation and Examples
 Check out the documentation here. Oh wait I didn't make it yet.
 
-## Compiling and Running with the Gamer Language CLI (macOS)
+## Compiling and Running with the Gamer Language CLI
 You'll need to install the epic Gamer Language Command Line Interface (CLI) to compile and run gamer language code. Dw it's easy.
 
 1. Open up your terminal and `cd` to a nice folder where you want to put the gamer language compiler files.
