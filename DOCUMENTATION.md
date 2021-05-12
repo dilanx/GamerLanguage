@@ -19,7 +19,7 @@ Here's a table of contents so you can get around faster.
 10. [Variable manipulation](#Variable-manipulation)
 11. [Miscellaneous](#Miscellaneous)
 12. [Examples](#Examples)
-  a. [Take 2 numbers from chat and drop their sum](#Take-2-numbers-from-chat-and-drop-their-sum)
+    * [Take 2 numbers from chat and drop their sum](#Take-2-numbers-from-chat-and-drop-their-sum)
 
 ## Creating and running a file
 Create a normal text file with the extension `.gl`. 'gl' not only stands for Gamer Language but also for good luck because you're probably gonna need it when coding in this language lmao.
