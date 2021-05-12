@@ -26,7 +26,7 @@ cd GamerLanguage/cli
 sh update.sh
 ```
 
-Now you're done!
+Now you're done! You don't have be in the CLI folder to run anything btw.
 
 Run a Gamer Language file using `gamer pog <example.gl>`.
 
