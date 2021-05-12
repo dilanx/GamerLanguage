@@ -1,0 +1,4 @@
+# Gamer Language Documentation
+Hello and welcome lovely humans to the documentation for the best language in the world. Gamer language has one several non-existent awards over the years and we hope to continue doing so.
+
+Before you get started, you'll want to make sure you can actually run what you code by setting up your [compiler](https://github.com/dilanx/GamerLanguage#compiling-and-running-with-the-gamer-language-cli) and [editor](https://github.com/dilanx/GamerLanguage#compiling-and-running-with-the-gamer-language-cli) (editor doesn't have to be set up though you can just use a regular text editor if you want).
