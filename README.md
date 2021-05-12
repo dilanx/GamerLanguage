@@ -8,7 +8,7 @@ It's also weird and difficult to program in but whatever it's kinda fun and it c
 ## Documentation and Examples
 Check out the documentation here. Oh wait I didn't make it yet.
 
-## Compiling and Running with the Gamer Language CLI
+## Compiling and Running with the Gamer Language CLI (macOS)
 You'll need to install the epic Gamer Language Command Line Interface (CLI) to compile and run gamer language code. Dw it's easy.
 
 1. Open up your terminal and `cd` to a nice folder where you want to put the gamer language compiler files.
@@ -27,6 +27,13 @@ sh update.sh
 ```
 
 Now you're done! You don't have be in the CLI folder to run anything btw.
+
+You'll be able to run the `gamer` command in your terminal from anywhere.
+
+Try running this to make sure.
+```
+gamer version
+```
 
 Run a Gamer Language file using `gamer pog <example.gl>`.
 
