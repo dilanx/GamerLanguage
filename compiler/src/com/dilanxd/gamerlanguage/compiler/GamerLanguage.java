@@ -1,4 +1,4 @@
-package com.dilanxd.gamerlanguage;
+package com.dilanxd.gamerlanguage.compiler;
 
 import java.io.File;
 import java.io.IOException;
@@ -14,7 +14,7 @@ public class GamerLanguage {
 	public static Scanner scanner;
 
 	public static void main(String[] args) throws IOException {
-
+		
 		if (args.length < 1) {
 
 			System.err.println("Anti pog number of args. Provide a file name to compile plz.");

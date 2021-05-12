@@ -1,4 +1,4 @@
-package com.dilanxd.gamerlanguage;
+package com.dilanxd.gamerlanguage.compiler;
 
 public class Condition {
 

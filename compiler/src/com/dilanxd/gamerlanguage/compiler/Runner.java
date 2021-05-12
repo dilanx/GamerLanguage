@@ -1,4 +1,4 @@
-package com.dilanxd.gamerlanguage;
+package com.dilanxd.gamerlanguage.compiler;
 
 import java.util.ArrayList;
 import java.util.List;
