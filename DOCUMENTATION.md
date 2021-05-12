@@ -142,7 +142,7 @@ When your server is called with those arguments (there'll be a problem if the ca
 
 You can return out of a server using the `easy` keyword lol. You can follow it with a [simple expression](#Simple-expressions) to return a value like `easy <expression>` or you can just call `easy` to quit out of the server.
 
-Check out [Advanced-Expressions](#Advanced-expressions) to see how to call these servers and get the return value.
+Check out [advanced expressions](#Advanced-expressions) to see how to call these servers and get the return value.
 
 ## Advanced expressions
 Advanced expressions can only be used in [variable](#Variables) assignment right now, and this is the only way to call servers.
