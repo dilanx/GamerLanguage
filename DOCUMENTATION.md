@@ -58,8 +58,6 @@ An expression is basically a set of things that equal one value. These include:
   * Booleans have been gamerified. Popping off and taking a `W` is true, while taking a fat `L` is false.
 * Variables *`varname`*
 
-So for example, you could do something like
-
 ## Conditionals
 Run some code on a condition using the `lmao` word with a `?` at the end lol. Condition phrases are dependent on the type.
 
