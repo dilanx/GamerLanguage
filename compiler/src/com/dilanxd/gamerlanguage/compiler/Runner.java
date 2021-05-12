@@ -310,8 +310,7 @@ public class Runner {
 				}
 
 			}
-
-
+			
 			String ret = Binding.RETURN + " ";
 
 			if (lineNoStrConst.startsWith(ret)) {
@@ -320,6 +319,14 @@ public class Runner {
 
 				return val;
 
+			}
+			
+			String ret2 = Binding.RETURN;
+			
+			if (lineNoStrConst.equals(ret2)) {
+				
+				return null;
+				
 			}
 
 
