@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-$VERSION = "0.0.4"
+$VERSION = "0.0.5"
 
 if ARGV.length == 1
 	
