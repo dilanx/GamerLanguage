@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "Updating gamer language let's gooooooo!"
+echo " "
+
 echo "Checking for remote updates..."
 git pull
 echo " "

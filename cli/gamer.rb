@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-$VERSION = "0.0.2"
+$VERSION = "0.0.3"
 
 if ARGV.length == 1
 	
@@ -44,3 +44,4 @@ puts "gamer poggers command line yooo"
 puts " "
 puts "$ gamer pog <file-name.gl> - execute a gamer language file"
 puts "$ gamer update - check for gamer language updates"
+puts "$ gamer version - view gamer information"
