@@ -1,6 +1,8 @@
 .*
 !.gitignore
 
+cli/gamer
+
 # Compiled class file
 *.class
 
