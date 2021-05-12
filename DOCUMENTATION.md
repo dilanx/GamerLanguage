@@ -209,7 +209,7 @@ Here are some fun examples with Gamer Language. I'll add more later.
 ### Take 2 numbers from chat and drop their sum
 This program asks whether you want to add or quit, and will take two numbers and drop their sum. It'll then ask you if you want to add or quit and will keep going until you quit. You get the idea.
 
-Here, I used an infinite loop to keep asking and call a separate function to get the sum.
+Here, I used an infinite loop to keep asking, and I call a separate function to get the sum.
 
 ```
 server lobby
