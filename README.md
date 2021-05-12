@@ -11,7 +11,10 @@ Check out the documentation here. Oh wait I didn't make it yet.
 ## Compiling and Running with the Gamer Language CLI
 You'll need to install the epic Gamer Language Command Line Interface (CLI) to compile and run gamer language code. Dw it's easy.
 
-1. Make sure you have [Homebrew](https://brew.sh) installed, then open up your terminal and `cd` to a nice folder where you want to put the gamer language compiler files.
+### macOS
+With macOS's cracked unix system, it's easy to install the entire command line stuff with only a few terminal commands, and keep it updated with only one command.
+
+1. Make sure you have [Homebrew](https://brew.sh) installed (if you're a true gamer you should already have it installed), then open up your terminal and `cd` to a nice folder where you want to put the gamer language compiler files.
 
 2. Run the following command to download all the gamer files.
 ```
