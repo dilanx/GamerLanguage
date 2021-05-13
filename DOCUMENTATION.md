@@ -21,6 +21,7 @@ Here's a table of contents so you can get around faster.
 12. [Miscellaneous](#Miscellaneous)
 13. [Examples](#Examples)
     * [Take 2 numbers from chat and drop their sum](#Take-2-numbers-from-chat-and-drop-their-sum)
+    * [Print out all contents of an inventory in order](#Print-out-all-contents-of-an-inventory-in-order)
 
 ## Creating and running a file
 Create a normal text file with the extension `.gl`. 'gl' not only stands for Gamer Language but also for good luck because you're probably gonna need it when coding in this language lmao.
