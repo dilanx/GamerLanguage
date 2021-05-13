@@ -37,13 +37,12 @@ Let's start with a super simple program that prints "Hello, world!" into the con
 ```
 server lobby
 
-  // hello lol
   drop "Hello, world!" in chat
   
 dc
 ```
 
-Super easy. `server`s are like [functions](#Functions), you join them and then you disconnect with `dc` at the end. Your program starts in the `lobby` server. You **cannot** have normal code in the global scope, meaning they have to be in functions. If you don't plan on using multiple functions, just put all of your code in the lobby. Then you can [print](#IO) a message by dropping it in the chat, where the chat is the console. You can prefix lines with `//` to comment it out (although it doesn't really work if you put it on a line with other stuff).
+Super easy. `server`s are like [functions](#Functions), you join them and then you disconnect with `dc` at the end. Your program starts in the `lobby` server. You **cannot** have normal code in the global scope, meaning they have to be in functions. If you don't plan on using multiple functions, just put all of your code in the lobby. Then you can [print](#IO) a message by dropping it in the chat, where the chat is the console.
 
 A few things to note about Gamer Language:
 * Indentation doesn't matter nor do blank lines.
