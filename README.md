@@ -6,7 +6,7 @@ Imagine yourself in a Twitch chat but you're also coding and for a second you fo
 It's also weird and difficult to program in but whatever it's kinda fun and it comes with a compiler and executor yay.
 
 ## Documentation and Examples
-Check out the documentation here. Oh wait I didn't make it yet.
+[Check out the documentation pls.](DOCUMENTATION.md)
 
 ## Compiling and Running with the Gamer Language CLI
 You'll need to install the epic Gamer Language Command Line Interface (CLI) to compile and run gamer language code. Dw it's easy.
