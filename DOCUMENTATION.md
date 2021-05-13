@@ -306,3 +306,29 @@ server add: x y
     
 dc
 ```
+
+### Print out all contents of an inventory in order
+Here's an example program which makes use of a list. I add three items to an empty list, initialize an index variable to 0, loop for as long as the index variable is less than the size of the list, and get each value and drop in chat.
+
+```
+server lobby
+
+    mylist mains inventory
+    
+    mylist noob late "first text"
+    mylist noob late "second text"
+    mylist noob late "third text"
+    
+    index mains 0
+    
+    grinding while index kdr jank mylist cringe?
+    
+        val mains mylist craft index
+        drop val in chat
+        
+        index good
+        
+    gg
+    
+dc
+```
