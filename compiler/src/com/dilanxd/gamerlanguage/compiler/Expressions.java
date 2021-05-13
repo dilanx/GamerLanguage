@@ -1,5 +1,8 @@
 package com.dilanxd.gamerlanguage.compiler;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Expressions {
 
 	public static Object get(String blockName, String phrase, int startIndex) {
@@ -44,6 +47,17 @@ public class Expressions {
 		
 		String var = blockName + ":" + word;
 		if (Variables.has(var)) {
+			
+			String nextWord = phrase.substring(startIndex + word.length() + 1);
+			
+			if (nextWord.startsWith(Binding.LIST_LEN)) {
+				
+				@SuppressWarnings("unchecked")
+				List<Object> list = (ArrayList<Object>) Variables.get(var);
+				return list.size();
+				
+			}
+			
 			return Variables.get(var);
 		}
 

@@ -21,6 +21,8 @@ public class Cleaner {
 
 			line = line.trim().replaceAll("\t", "");
 			if (line.isEmpty()) continue;
+			
+			if (line.startsWith("//")) continue;
 
 			String funcStart = Binding.FUNC_START + " ";
 

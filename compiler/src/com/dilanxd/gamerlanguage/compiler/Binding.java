@@ -26,7 +26,12 @@ public class Binding {
 	LOOP_WHILE = "grinding while",
 	LOOP_BREAK = "poggers",
 	
-	
+	LIST = "inventory",
+	LIST_LOC_END = "late",
+	LIST_ADD = "noob",
+	LIST_LEN = "cringe",
+	LIST_GET = "craft",
+	LIST_DEL = "rip",
 	
 	PRINT = "drop",
 	PRINT_STDOUT = "chat",

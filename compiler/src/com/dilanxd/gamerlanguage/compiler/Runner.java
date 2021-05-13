@@ -49,28 +49,53 @@ public class Runner {
 				String varName = blockName + ":" + data[2];
 
 				if (Variables.has(varName)) {
-					
+
 					if (data.length >= 5) {
-						
+
 						if (data[3].equals("but")) {
-							
-							
+
+
 							double d1 = (double) Variables.get(varName);
 							double d2 = (double) Expressions.get(blockName, data[4], 0);
-							
+
 							Variables.set(blockName + ":" + data[0], d1 + d2);
 							l++;
 							continue;
-							
+
 						}
-						
+
 					}
-					
+
 				}
-				
-				
+
+				if (data[2].equals("inventory")) {
+
+					Variables.set(blockName + ":" + data[0], new ArrayList<Object>());
+
+					l++;
+					continue;
+
+				}
+
 
 				Object val = Expressions.get(blockName, line, key.length() + varAssign.length());
+
+				if (val instanceof ArrayList) {
+
+					String keyword = data[3];
+
+					if (keyword.equals(Binding.LIST_GET)) {
+
+						@SuppressWarnings("unchecked")
+						List<Object> list = (ArrayList<Object>) val;
+						int pos = Lists.index(list, data[4]);
+						
+						if (pos == -1) pos = list.size() - 1;
+						val = list.get(pos);
+						
+					}
+
+				}
 
 				if (val == null) {
 
@@ -254,6 +279,66 @@ public class Runner {
 
 			}
 
+			/* LISTS */
+
+			String add = " " + Binding.LIST_ADD + " ";
+
+			if (lineNoStrConst.contains(add)) {
+
+				String[] data = line.split(" ");
+
+				@SuppressWarnings("unchecked")
+				List<Object> list = (ArrayList<Object>) Variables.get(blockName + ":" + data[0]);
+
+				int pos = Lists.index(list, data[2]);
+
+				Object exp = Expressions.get(blockName, line, data[0].length() + add.length() + data[2].length() + 1);
+
+				if (pos == -1) {
+
+					list.add(exp);
+
+				}
+				else {
+
+					list.add(pos, exp);
+
+				}
+				Variables.set(blockName + ":" + data[0], list);
+
+				l++;
+				continue;
+
+			}
+
+			String del = " " + Binding.LIST_DEL + " ";
+
+			if (lineNoStrConst.contains(del)) {
+
+				String[] data = line.split(" ");
+
+				@SuppressWarnings("unchecked")
+				List<Object> list = (ArrayList<Object>) Variables.get(blockName + ":" + data[0]);
+
+				int pos = Lists.index(list, data[2]);
+
+				if (pos == -1) {
+
+					list.remove(list.size() - 1);
+
+				} else {
+
+					list.remove(pos);
+
+				}
+
+				Variables.set(blockName + ":" + data[0], list);
+
+				l++;
+				continue;
+
+			}
+
 
 
 			/* PRINT AND RETURN */
@@ -284,7 +369,7 @@ public class Runner {
 			if (lineNoStrConst.startsWith(input)) {
 
 				String[] data = line.split(" ");
-				
+
 				String var = blockName + ":" + data[5];
 
 				// read stats from chat into gamer
@@ -294,23 +379,23 @@ public class Runner {
 					if (data[1].equals(Binding.INPUT_STR)) {
 
 						String s = GamerLanguage.scanner.nextLine();
-						
+
 						Variables.set(var, s);
 
 					}
-					
+
 					else if (data[1].equals(Binding.INPUT_NUM)) {
-						
+
 						double d = GamerLanguage.scanner.nextDouble();
-						
+
 						Variables.set(var, d);
-						
+
 					}
 
 				}
 
 			}
-			
+
 			String ret = Binding.RETURN + " ";
 
 			if (lineNoStrConst.startsWith(ret)) {
@@ -320,13 +405,13 @@ public class Runner {
 				return val;
 
 			}
-			
+
 			String ret2 = Binding.RETURN;
-			
+
 			if (lineNoStrConst.equals(ret2)) {
-				
+
 				return null;
-				
+
 			}
 
 
