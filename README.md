@@ -1,5 +1,5 @@
 # Gamer Language
-A stupid esoteric programming language where you program the same way a gamer talks lmaoo.
+Gamer Language is a stupid esoteric programming language where you program the same way a gamer talks lmaoo.
 
 Imagine yourself in a Twitch chat but you're also coding and for a second you forget that they're different things.
 
