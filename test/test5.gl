@@ -1,0 +1,20 @@
+server lobby
+
+    mylist mains inventory
+    
+    mylist noob late "first text"
+    mylist noob late "second text"
+    mylist noob late "third text"
+    
+    index mains 0
+    
+    grinding while index kdr jank mylist cringe?
+    
+        val mains mylist craft index
+        drop val in chat
+        
+        index good
+        
+    gg
+    
+dc

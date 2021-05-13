@@ -54,7 +54,7 @@ public class Expressions {
 				
 				@SuppressWarnings("unchecked")
 				List<Object> list = (ArrayList<Object>) Variables.get(var);
-				return list.size();
+				return (double) list.size();
 				
 			}
 			

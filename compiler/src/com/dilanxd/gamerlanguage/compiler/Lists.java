@@ -4,7 +4,13 @@ import java.util.List;
 
 public class Lists {
 	
-	public static int index(List<Object> list, String pos) {
+	public static int index(List<Object> list, String blockName, String pos) {
+		
+		if (Variables.has(blockName + ":" + pos)) {
+			
+			return Integer.parseInt(Double.toString((double) Variables.get(blockName + ":" + pos)).split("\\.")[0]);
+			
+		}
 		
 		if (pos.equals(Binding.LIST_LOC_END)) {
 			

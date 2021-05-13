@@ -88,7 +88,7 @@ public class Runner {
 
 						@SuppressWarnings("unchecked")
 						List<Object> list = (ArrayList<Object>) val;
-						int pos = Lists.index(list, data[4]);
+						int pos = Lists.index(list, blockName, data[4]);
 						
 						if (pos == -1) pos = list.size() - 1;
 						val = list.get(pos);
@@ -290,7 +290,7 @@ public class Runner {
 				@SuppressWarnings("unchecked")
 				List<Object> list = (ArrayList<Object>) Variables.get(blockName + ":" + data[0]);
 
-				int pos = Lists.index(list, data[2]);
+				int pos = Lists.index(list, blockName, data[2]);
 
 				Object exp = Expressions.get(blockName, line, data[0].length() + add.length() + data[2].length() + 1);
 
@@ -320,7 +320,7 @@ public class Runner {
 				@SuppressWarnings("unchecked")
 				List<Object> list = (ArrayList<Object>) Variables.get(blockName + ":" + data[0]);
 
-				int pos = Lists.index(list, data[2]);
+				int pos = Lists.index(list, blockName, data[2]);
 
 				if (pos == -1) {
 
