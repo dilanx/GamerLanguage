@@ -124,7 +124,7 @@ Lists are a pretty poggers way to store multiple items in one variable. Make one
 <variable-name> mains inventory
 ```
 
-Add a value to the list with the `noob` keyword
+Add a value to the list with the `noob` keyword.
 ```
 <list-variable> noob <list-index> <simple-expression>
 ```
