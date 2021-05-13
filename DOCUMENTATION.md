@@ -13,12 +13,13 @@ Here's a table of contents so you can get around faster.
 4. [Simple expressions](#Simple-expressions)
 5. [Conditionals](#Conditionals)
 6. [Loops](#Loops)
-7. [Functions](#Functions)
-8. [Advanced expressions](#Advanced-expressions)
-9. [I/O](#IO)
-10. [Variable manipulation](#Variable-manipulation)
-11. [Miscellaneous](#Miscellaneous)
-12. [Examples](#Examples)
+7. [Lists](#Lists)
+8. [Functions](#Functions)
+9. [Advanced expressions](#Advanced-expressions)
+10. [I/O](#IO)
+11. [Variable manipulation](#Variable-manipulation)
+12. [Miscellaneous](#Miscellaneous)
+13. [Examples](#Examples)
     * [Take 2 numbers from chat and drop their sum](#Take-2-numbers-from-chat-and-drop-their-sum)
 
 ## Creating and running a file
@@ -69,6 +70,8 @@ An expression is basically a set of things that equal one value. These include:
 * Booleans *`W`, `F`*
   * Booleans have been gamerified. Popping off and taking a `W` is true, while taking a fat `L` is false.
 * Variables *`varname`*
+  * Just having the variable's name will give the value of the variable.
+  * If you add the `cringe` keyword after the variable name (`varname cringe`) and the variable is a list, it'll give the length of the list.
 
 ## Conditionals
 Run some code on a condition using the `lmao` word with a `?` at the end lol. Condition phrases are dependent on the type.
@@ -114,6 +117,41 @@ gg
 The [condition](#Conditionals) is the same stuff you can put between the 'lmao' and the '?' in the if statement.
 
 If you ever want to break out of the loop, all you've got to use is the `poggers` keyword. Check out this example if you want.
+
+## Lists
+Lists are a pretty poggers way to store multiple items in one variable. Make one by assigning the list [advanced expression](#Advanced-expressions) to a [variable](#Variables) with the `inventory` type.
+```
+<variable-name> mains inventory
+```
+
+Add a value to the list with the `noob` keyword
+```
+<list-variable> noob <list-index> <simple-expression>
+```
+The 'list-index' can either be a number of the position (starting at 0) in the list, or you can use the `late` keyword to append to the end of the list.
+For example, add a value 5 to the end of a list named mylist like `mylist noob late 5`.
+
+
+Getting the length of the list is a [simple expression](#Simple-expressions) with the `cringe` keyword.
+```
+<list-variable> cringe
+```
+(for example: `var1 mains mylist cringe` or `lmao var1 kdr stays mylist cringe?`)
+
+
+Getting a value from the list is an [advanced expression](#Advanced-expressions) (meaning it can only be used in variable assignment with `mains`) with the `craft` keyword.
+```
+<new-variable-name> mains <list-variable> craft <list-index>
+```
+Remember, list indexes are either the position number starting at 0 or `late` for the last index.
+
+
+Remove a value from the list at a certain index with the `rip` keyword.
+```
+<list-variable> rip <list-index>
+```
+For the third time lmao, the list index is either a position number starting at 0 or `late` for the last item.
+
 
 ## Functions
 So if you're coding in this amazing language, you've probably been using `server lobby` and `dc` to run the code. That's a server (function), but you can even make more servers. They have to be in the global scope though, so you can't put servers in servers.
@@ -166,6 +204,19 @@ test mains pogchampepicgamer as "hello world" 2
 ```
 
 Of course, if 'pogchampepicgamer' doesn't return anything with `easy`, then 'test' will store nothing (but you still have to call servers this way). But, let's say it returned the value '5' or something with `easy 5`, that value will be stored in 'test'.
+
+You can also make a new [list](#Lists) like this.
+```
+<variable-name> mains inventory
+```
+
+And, to use an item from a [list](#Lists), you'll have to first store it in a variable like this.
+
+```
+<variable-name> mains <list-variable-name> craft <list-index>
+```
+
+Check out list indexes and stuff in the [lists](#Lists) section.
 
 ## I/O
 Currently, you can read stuff from and print stuff into the chat (console).
